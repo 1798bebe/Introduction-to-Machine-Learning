@@ -1,3 +1,4 @@
+[Application of Machine Learning Techniques using Python]
 This final project aims to understand the key concepts learned in the EEE3142 Introduction to Machine Learning course and implement them using Python. 
 Throughout the course, we have delved into foundational techniques such as Principal Component Analysis (PCA), Gaussian Mixture Models (GMM), and Support Vector Machines (SVM). 
 This project serves as a culmination of these topics, providing hands-on experience in applying them to real-world data.
