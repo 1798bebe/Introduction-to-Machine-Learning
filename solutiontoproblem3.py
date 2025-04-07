@@ -51,7 +51,7 @@ X_train, X_test, y_train, y_test = model_selection.train_test_split(X, transform
 #TODO 2: Create SVM object with a kernel of your choice (Hint: Use svm in sklearn)
 #TODO 2: The SVM object should have name: estimator
 estimator=svm.SVC(C=1.0,kernel='linear',coef0=0.0,shrinking=True)
-estimator.fit(X_test,y_test)
+estimator.fit(X_train,y_train)
 
 #TODO 3: Predict the class labels of the text set
 #TODO 3: The predicted labels should have name: pred
