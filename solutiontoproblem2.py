@@ -101,7 +101,7 @@ for n, color in enumerate(grade_colors):
     u = w[0] / np.linalg.norm(w[0])
     angle = np.rad2deg(np.arctan2(u[1], u[0]))
     v = 2.0 * np.sqrt(2.0) * np.sqrt(v)
-    ellipse = mpl.patches.Ellipse(estimator.means_[n, :2], v[0], v[1], 180 + angle, color=color)
+    ellipse = mpl.patches.Ellipse(estimator.means_[n, :2], v[0], v[1], angle=180 + angle, color=color)
     ellipse.set_alpha(0.5)
     ax.add_artist(ellipse)
 
