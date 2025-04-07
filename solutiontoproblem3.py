@@ -56,12 +56,13 @@ estimator.fit(X_train,y_train)
 #TODO 3: Predict the class labels of the text set
 #TODO 3: The predicted labels should have name: pred
 pred = estimator.predict(X_test)
+conv_pred = [int(x) for x in pred]
 
 # Calculate and print the accuracy of the SVM / Show the predictions and ground truth values
 accuracy = accuracy_score(y_test, pred)
 print('Accuracy:\t', "%.2f %%" % (accuracy*100))
 print("Test:\t\t", y_test)
-print("Prediction:\t", list(pred))
+print("Prediction:\t", list(conv_pred))
 
 # Answer to problem 3-(b):
 # We used the linear kernel because the linear kernel in general provides much faster performance than other kernels.
